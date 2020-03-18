@@ -14,7 +14,7 @@
           RKAT
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="/dp/pemasukan-data-rkat">Pemasukan Data RKAT</a>
+          <a class="dropdown-item" href="{{url('/dp/pemasukan-data-rkat')}}">Pemasukan Data RKAT</a>
           <a class="dropdown-item" href="#">RKAT Menunggu Persetujuan</a>
           <a class="dropdown-item" href="#">RKAT Disetujui & Pengajuan Dana</a>
         </div>
