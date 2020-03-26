@@ -1,5 +1,5 @@
 @extends('layout/main')
-@section('title', 'Beranda | Dashboard Departemen/Prodi')
+@section('title', 'Prototype Sistem Keuangan FPBS')
 
 @section('container')
 
