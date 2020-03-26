@@ -21,5 +21,7 @@ Route::get('/', function () {
 //     return view('dashboard_dep_prod');
 // });
 
+Route::get('/', 'HomeController@home');
+
 Route::get('/dp', 'DPController@home');
 Route::get('/dp/pemasukan-data-rkat', 'DPController@pemasukanDataRKAT');
