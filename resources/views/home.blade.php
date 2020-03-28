@@ -16,7 +16,7 @@
 <body>
     <div class="container d-flex align-items-center justify-content-center min-vh-100">
         <div class="navbar d-flex justify-content-center m-6">
-            <img src="http://si.upi.edu/assets/images/logo-upi.png" alt="" width="82">
+            <img src="{{ asset('img/logo-upi.png') }}" alt="" width="82">
             <div class="lh-100 my-0">
                 <h1 class="mb-0 lh-100 ml-3 mt-1">SISTEM KEUANGAN</h1>
                 <h3 class="ml-3 mb-3">FPBS UPI</h3>
