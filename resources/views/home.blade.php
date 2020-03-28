@@ -10,45 +10,45 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    {{-- <title>Prototype Sistem Keuangan FPBS</title> --}}
-    <title>Prototype Sistem Keuangan FPBS</title>
+    <title>Sistem Keuangan FPBS UPI</title>
 </head>
 
 <body>
-
-
     <div class="container d-flex align-items-center justify-content-center min-vh-100">
+        <div class="navbar d-flex justify-content-center m-6">
+            <img src="http://si.upi.edu/assets/images/logo-upi.png" alt="" width="82">
+            <div class="lh-100 my-0">
+                <h1 class="mb-0 lh-100 ml-3 mt-1">SISTEM KEUANGAN</h1>
+                <h3 class="ml-3 mb-3">FPBS UPI</h3>
+            </div>
+        </div>
         <div class="d-flex justify-content-center">
-            <div class="row">
-                <div class="col">
-                    <div class="card mb-3 shadow h-100" style="width: 18rem;">
-                        <img src="{{ asset('img/fakultas.png') }}" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Portal Fakultas</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                                in.</p>
-                            {{-- <a href="#" class="btn btn-primary">Go somewhere</a> --}}
-                        </div>
-                        <div class="card-footer">
-                            <div class="d-flex justify-content-end">
-                                <a href="#" class="btn btn-outline-dark">Buka</a>
-                            </div>
+            <div class="col">
+                <div class="card mb-3 shadow h-100" style="width: 18rem;">
+                    <img src="{{ asset('img/fakultas.png') }}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Portal Fakultas</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+                            in.</p>
+                    </div>
+                    <div class="card-footer">
+                        <div class="d-flex justify-content-end">
+                            <a href="#" class="btn btn-outline-dark">Buka</a>
                         </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card mb-3 shadow h-100" style="width: 18rem;">
-                        <img src="{{ asset('img/departemen-prodi.png') }}" class="card-img-top">
-                        <div class="card-body">
-                            <h5 class="card-title">Portal Departemen & Prodi</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                                in.</p>
-                            {{-- <a href="#" class="btn btn-primary">Go somewhere</a> --}}
-                        </div>
-                        <div class="card-footer">
-                            <div class="d-flex justify-content-end">
-                                <a href="{{url('/dp')}}" class="btn btn-outline-dark">Buka</a>
-                            </div>
+            </div>
+            <div class="col">
+                <div class="card mb-3 shadow h-100" style="width: 18rem;">
+                    <img src="{{ asset('img/departemen-prodi.png') }}" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Portal Departemen & Prodi</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+                            in.</p>
+                    </div>
+                    <div class="card-footer">
+                        <div class="d-flex justify-content-end">
+                            <a href="{{url('/dp')}}" target="_blank" class="btn btn-outline-dark">Buka</a>
                         </div>
                     </div>
                 </div>
