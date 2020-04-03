@@ -15,21 +15,12 @@
 </head>
 
 <body>
-    <!-- Image and text -->
-    {{-- <nav class="navbar navbar-light bg-light">
-        <a class="navbar-brand" href="{{url('/')}}">
-    <img src="https://upload.wikimedia.org/wikipedia/id/thumb/0/09/Logo_Almamater_UPI.svg/600px-Logo_Almamater_UPI.svg.png"
-        width="30" height="30" class="d-inline-block align-top" alt="">
-    Prototype Sistem Keuangan FPBS
-    </a>
-    </nav> --}}
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-light bg-light shadow navbar-fixed-top">
         <div class="container">
             <a class="navbar-brand" href="{{url('/')}}">
-                <img src="https://upload.wikimedia.org/wikipedia/id/thumb/0/09/Logo_Almamater_UPI.svg/480px-Logo_Almamater_UPI.svg.png"
+                <img src="{{ asset('img/logo-upi.png') }}"
                     width="30" height="30" class="d-inline-block align-center" alt="">
-                <span class="ml-2 h-5">Prototype Sistem Keuangan FPBS</span>
+                <span class="ml-2 h-5">Sistem Keuangan FPBS</span>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
                 aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,19 +28,9 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav mr-auto">
-                    {{-- <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
-                    </li> --}}
                     @yield('nav-item')
                 </ul>
                 <span class="navbar-text">
-                    {{-- Dashboard Departemen/Prodi<span class="ml-2 h-5"><a href="#" class="badge badge-dark text-light">Log out</a></span> --}}
                     @yield('navbar-text')
                 </span>
             </div>

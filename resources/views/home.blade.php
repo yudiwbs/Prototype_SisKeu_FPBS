@@ -48,7 +48,7 @@
                     </div>
                     <div class="card-footer">
                         <div class="d-flex justify-content-end">
-                            <a href="{{url('/dp')}}" target="_blank" class="btn btn-outline-dark">Buka</a>
+                            <a href="{{url('/dp')}}" class="btn btn-outline-dark">Buka</a>
                         </div>
                     </div>
                 </div>
@@ -61,8 +61,6 @@
             object-fit: contain;
             height: 122px;
             padding: 22px;
-            /* opacity: 0.8; */
-            /* background-color: #979797; */
         }
 
         .card-img-top {

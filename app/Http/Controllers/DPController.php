@@ -15,4 +15,9 @@ class DPController extends Controller
     {
         return view('departemen-prodi.pemasukan_data_rkat');
     }
+
+    public function RKATMenungguPersetujuan()
+    {
+        return view('departemen-prodi.rkat_menunggu_persetujuan');
+    }
 }

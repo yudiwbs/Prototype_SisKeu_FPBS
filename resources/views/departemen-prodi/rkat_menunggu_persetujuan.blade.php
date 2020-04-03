@@ -1,5 +1,5 @@
 @extends('layout/main')
-@section('title', 'Pemasukan Data RKAT | Dashboard Departemen/Prodi')
+@section('title', 'RKAT Menunggu Persetujuan | Dashboard Departemen/Prodi')
 
 @section('navbar-text')
 [Nama Departemen/Prodi]<span class="ml-2 h-5"><a href="#" class="badge badge-dark text-light">Log out</a></span>
@@ -15,8 +15,8 @@
         RKAT
     </a>
     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-        <a class="dropdown-item active" href="{{url('/dp/pemasukan-data-rkat')}}">Pemasukan Data RKAT</a>
-        <a class="dropdown-item" href="{{url('/dp/rkat-menunggu-persetujuan')}}">RKAT Menunggu Persetujuan</a>
+        <a class="dropdown-item" href="{{url('/dp/pemasukan-data-rkat')}}">Pemasukan Data RKAT</a>
+        <a class="dropdown-item active" href="{{url('/dp/rkat-menunggu-persetujuan')}}">RKAT Menunggu Persetujuan</a>
         <a class="dropdown-item" href="#">RKAT Disetujui & Pengajuan Dana</a>
     </div>
 </li>
@@ -30,7 +30,7 @@
 
 <div class="container">
     <div class="jumbotron shadow-sm">
-        <h1 class="display-4">Pemasukan Data RKAT</h1>
+        <h1 class="display-4">RKAT Menunggu Persetujuan</h1>
     </div>
 </div>
 
@@ -38,12 +38,45 @@
     <br>
     <div class="row">
         <div class="col">
-            <h6>Periode: 2019-2020</h6>
-            <h6>Status: Belum diajukan</h6>
+            <h6>Unit: xxxxxx</h6>
+
+            <br>
+
+            <h6><b>Keuangan Tingkat Fakultas</b></h6>
+            <input type="checkbox" id="v-fakultas" name="v-fakultas" checked>
+            <label for="v-fakultas">Sudah diverifikasi; tgl: xxxxxx</label>
+            <div class="input-group w-75">
+                <div class="input-group-prepend h-50">
+                    <span class="input-group-text h-50">Catatan</span>
+                </div>
+                <textarea class="form-control" aria-label="Catatan" rows="1"></textarea>
+            </div>
         </div>
         <div class="col">
-            <button type="button" class="btn btn-outline-dark float-right">Print</button>
-            <button type="button" class="btn btn-outline-dark float-right mr-2">Ajukan</button>
+            <br><br>
+
+            <h6><b>Kasubbag Keupeg</b></h6>
+            <input type="checkbox" id="v-kk" name="v-kk" checked>
+            <label for="v-kk">Sudah diverifikasi; tgl: xxxxxx</label>
+            <div class="input-group w-75">
+                <div class="input-group-prepend h-50">
+                    <span class="input-group-text h-50">Catatan</span>
+                </div>
+                <textarea class="form-control" aria-label="Catatan" rows="1"></textarea>
+            </div>
+        </div>
+        <div class="col">
+            <br><br>
+
+            <h6><b>Wakil Dekan Bidang KSD</b></h6>
+            <input type="checkbox" id="v-wadek" name="v-wadek" checked>
+            <label for="v-wadek">Sudah diverifikasi; tgl: xxxxxx</label>
+            <div class="input-group w-75">
+                <div class="input-group-prepend h-50">
+                    <span class="input-group-text h-50">Catatan</span>
+                </div>
+                <textarea class="form-control" aria-label="Catatan" rows="1"></textarea>
+            </div>
         </div>
     </div>
 
@@ -51,6 +84,7 @@
 
     <div class="row">
         <div class="container">
+            <h6>Diajukan tgl: xxxxxx</h6>
             <table class="table table-bordered">
                 <thead class="thead-dark">
                     <tr align="center">
@@ -65,7 +99,6 @@
                         <th scope="col" rowspan="2">Jumlah</th>
                         <th scope="col" rowspan="2">Jadwal</th>
                         <th scope="col" rowspan="2">Kelengkapan SPJ</th>
-                        <th scope="col" rowspan="2">Aksi</th>
                     </tr>
                     <tr align="center">
                         <th scope="col">No.</th>
@@ -86,10 +119,6 @@
                         <td></td>
                         <td></td>
                         <td></td>
-                        <td>
-                            <a href="#" class="badge badge-success">Edit</a>
-                            <a href="#" class="badge badge-danger">Hapus</a>
-                        </td>
                     </tr>
                     <tr>
                         <td></td>
@@ -104,10 +133,6 @@
                         <td></td>
                         <td></td>
                         <td></td>
-                        <td>
-                            <a href="#" class="badge badge-success">Edit</a>
-                            <a href="#" class="badge badge-danger">Hapus</a>
-                        </td>
                     </tr>
                     <tr>
                         <td></td>
@@ -122,10 +147,6 @@
                         <td></td>
                         <td></td>
                         <td></td>
-                        <td>
-                            <a href="#" class="badge badge-success">Edit</a>
-                            <a href="#" class="badge badge-danger">Hapus</a>
-                        </td>
                     </tr>
                 </tbody>
             </table>
@@ -136,10 +157,7 @@
 
     <div class="row">
         <div class="col">
-            <h6>Jumlah:</h6>
-        </div>
-        <div class="col">
-            <button type="button" class="btn btn-outline-dark float-right">Tambah Kegiatan</button>
+            <h6>Total: xxxxxx</h6>
         </div>
     </div>
     <br>
@@ -150,4 +168,5 @@
 <div class="container">
     <a class="btn btn-light btn-lg btn-block shadow-sm" href="{{url('/dp')}}" role="button">Kembali ke Beranda</a>
 </div>
+
 @endsection
