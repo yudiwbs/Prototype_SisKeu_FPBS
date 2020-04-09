@@ -30,7 +30,7 @@
 <div class="container">
     <br>
     <div class="jumbotron shadow-sm">
-        <h1 class="display-4">Dashboard Departemen/Prodi</h1>
+        <h1 class="display-4">Dashboard Departemen / Prodi</h1>
         <p class="lead">Pemasukan data dan pengajuan RKAT, pengajuan dana, dan pelaporan SPJ/SPTB.</p>
     </div>
 
