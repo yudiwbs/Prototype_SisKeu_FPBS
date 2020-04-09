@@ -17,7 +17,7 @@
 <body>
     <nav class="navbar navbar-light bg-light shadow navbar-fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="{{url('/')}}">
+            <a class="navbar-brand" href=@yield('nav-home')>
                 <img src="{{ asset('img/logo-upi.png') }}"
                     width="30" height="30" class="d-inline-block align-center" alt="">
                 <span class="ml-2 h-5">Sistem Keuangan FPBS</span>

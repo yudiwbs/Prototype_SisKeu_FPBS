@@ -26,3 +26,5 @@ Route::get('/', 'HomeController@home');
 Route::get('/dp', 'DPController@home');
 Route::get('/dp/pemasukan-data-rkat', 'DPController@pemasukanDataRKAT');
 Route::get('/dp/rkat-menunggu-persetujuan', 'DPController@RKATMenungguPersetujuan');
+Route::get('/dp/pengajuan-dana', 'DPController@pengajuanDana');
+Route::get('/dp/pelaporan-spj-sptb', 'DPController@pelaporanSpjSptb');

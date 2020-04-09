@@ -1,15 +1,16 @@
 @extends('layout/main')
 @section('title', 'RKAT Menunggu Persetujuan | Dashboard Departemen/Prodi')
 
+@section('nav-home')
+{{url('/dp')}}
+@endsection
+
 @section('navbar-text')
-[Nama Departemen/Prodi]<span class="ml-2 h-5"><a href="#" class="badge badge-dark text-light">Log out</a></span>
+[Nama Departemen/Prodi]<span class="ml-2 h-5"><a href="{{url('/')}}" class="badge badge-dark text-light">Log out</a></span>
 @endsection
 
 @section('nav-item')
-<li class="nav-item">
-    <a class="nav-link" href="{{url('/dp')}}">Beranda</a>
-</li>
-<li class="nav-item dropdown active">
+{{-- <li class="nav-item dropdown active">
     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
         aria-haspopup="true" aria-expanded="false">
         RKAT
@@ -22,7 +23,7 @@
 </li>
 <li class="nav-item">
     <a class="nav-link" href="#">Lapor SPJ/SPTB</a>
-</li>
+</li> --}}
 @endsection
 
 @section('container')
@@ -30,7 +31,7 @@
 
 <div class="container">
     <div class="jumbotron shadow-sm">
-        <h1 class="display-4">RKAT Menunggu Persetujuan</h1>
+        <h3 class="font-weight-light">RKAT Menunggu Persetujuan</h3>
     </div>
 </div>
 
@@ -168,5 +169,12 @@
 <div class="container">
     <a class="btn btn-light btn-lg btn-block shadow-sm" href="{{url('/dp')}}" role="button">Kembali ke Beranda</a>
 </div>
+
+<style>
+    .jumbotron {
+        padding-top: 1em !important;
+        padding-bottom: 1em !important;
+    }
+</style>
 
 @endsection

@@ -1,5 +1,5 @@
 @extends('layout/main')
-@section('title', 'Pemasukan Data RKAT | Dashboard Departemen/Prodi')
+@section('title', 'Pelaporan SPJ/SPTB | Dashboard Departemen/Prodi')
 
 @section('nav-home')
 {{url('/dp')}}
@@ -31,7 +31,7 @@
 
 <div class="container">
     <div class="jumbotron shadow-sm">
-        <h3 class="font-weight-light">Pemasukan Data RKAT</h3>
+        <h3 class="font-weight-light">Pelaporan SPJ/SPTB</h3>
     </div>
 </div>
 
@@ -39,12 +39,15 @@
     <br>
     <div class="row">
         <div class="col">
-            <h6>Periode: 2019-2020</h6>
-            <h6>Status: Belum diajukan</h6>
+            <form class="form-inline">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-dark float-left mr-2" type="submit">Search</button>
+                <button type="button" class="btn btn-outline-dark float-left">Filter</button>
+            </form>
         </div>
         <div class="col">
             <button type="button" class="btn btn-outline-dark float-right">Print</button>
-            <button type="button" class="btn btn-outline-dark float-right mr-2">Ajukan</button>
+            {{-- <button type="button" class="btn btn-outline-dark float-right mr-2">Ajukan</button> --}}
         </div>
     </div>
 
@@ -56,21 +59,19 @@
                 <thead class="thead-dark">
                     <tr align="center">
                         <th scope="col" rowspan="2">No.</th>
-                        <th scope="col" rowspan="2">Kebijakan / Kegiatan</th>
-                        <th scope="col" rowspan="2">Output</th>
-                        <th scope="col" rowspan="2">IKU</th>
-                        <th scope="col" rowspan="2">Alokasi</th>
-                        <th scope="col" rowspan="2">Sumber Dana</th>
-                        <th scope="col" colspan="2">MAK</th>
-                        <th scope="col" rowspan="2">SBU</th>
+                        <th scope="col" rowspan="2">Penerima</th>
+                        <th scope="col" rowspan="2">NPWP</th>
+                        <th scope="col" rowspan="2">Uraian</th>
+                        <th scope="col" colspan="2">Bukti</th>
+                        <th scope="col" rowspan="2">Kegiatan</th>
+                        <th scope="col" rowspan="2">COA</th>
                         <th scope="col" rowspan="2">Jumlah</th>
-                        <th scope="col" rowspan="2">Jadwal</th>
-                        <th scope="col" rowspan="2">Kelengkapan SPJ</th>
+                        <th scope="col" rowspan="2">Jumlah Kena Pajak</th>
                         <th scope="col" rowspan="2">Aksi</th>
                     </tr>
                     <tr align="center">
+                        <th scope="col">Tanggal</th>
                         <th scope="col">No.</th>
-                        <th scope="col">Uraian</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -85,8 +86,6 @@
                         <td></td>
                         <td></td>
                         <td></td>
-                        <td></td>
-                        <td></td>
                         <td>
                             <a href="#" class="badge badge-success">Edit</a>
                             <a href="#" class="badge badge-danger">Hapus</a>
@@ -103,16 +102,12 @@
                         <td></td>
                         <td></td>
                         <td></td>
-                        <td></td>
-                        <td></td>
                         <td>
                             <a href="#" class="badge badge-success">Edit</a>
                             <a href="#" class="badge badge-danger">Hapus</a>
                         </td>
                     </tr>
                     <tr>
-                        <td></td>
-                        <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
@@ -137,10 +132,10 @@
 
     <div class="row">
         <div class="col">
-            <h6>Jumlah:</h6>
+            {{-- <h6>Jumlah:</h6> --}}
         </div>
         <div class="col">
-            <button type="button" class="btn btn-outline-dark float-right" disabled>Tambah Kegiatan<sup>WIP</sup></button>
+            <button type="button" class="btn btn-outline-dark float-right" disabled>Tambah SPTB<sup>WIP</sup></button>
         </div>
     </div>
     <br>

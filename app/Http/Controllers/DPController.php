@@ -20,4 +20,14 @@ class DPController extends Controller
     {
         return view('departemen-prodi.rkat_menunggu_persetujuan');
     }
+
+    public function pengajuanDana()
+    {
+        return view('departemen-prodi.pengajuan_dana');
+    }
+
+    public function pelaporanSpjSptb()
+    {
+        return view('departemen-prodi.pelaporan_spj_sptb');
+    }
 }
