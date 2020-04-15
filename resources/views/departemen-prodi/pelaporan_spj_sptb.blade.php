@@ -135,7 +135,7 @@
             {{-- <h6>Jumlah:</h6> --}}
         </div>
         <div class="col">
-            <button type="button" class="btn btn-outline-dark float-right" disabled>Tambah SPTB<sup>WIP</sup></button>
+            <a href="{{url('/dp/pelaporan-spj-sptb/rincian-pelaporan-spj-sptb')}}" class="btn btn-outline-dark float-right" disabled>Tambah SPTB</a>
         </div>
     </div>
     <br>

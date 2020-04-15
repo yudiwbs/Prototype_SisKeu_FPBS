@@ -140,7 +140,7 @@
             <h6>Jumlah:</h6>
         </div>
         <div class="col">
-            <button type="button" class="btn btn-outline-dark float-right" disabled>Tambah Kegiatan<sup>WIP</sup></button>
+            <a class="btn btn-outline-dark float-right" href="{{url('/dp/pemasukan-data-rkat/tambah-kegiatan')}}">Tambah Kegiatan</a>
         </div>
     </div>
     <br>

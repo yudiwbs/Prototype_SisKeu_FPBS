@@ -1,5 +1,5 @@
 @extends('layout/main')
-@section('title', 'Pengajuan Dana | Dashboard Departemen/Prodi')
+@section('title', 'Rincian Pengajuan Dana | Pengajuan Dana')
 
 @section('nav-home')
 {{url('/dp')}}
@@ -31,7 +31,7 @@
 
 <div class="container">
     <div class="jumbotron shadow-sm">
-        <h3 class="font-weight-light">Pengajuan Dana</h3>
+        <h3 class="font-weight-light">Rincian Pengajuan Dana</h3>
     </div>
 </div>
 
@@ -39,11 +39,12 @@
     <br>
     <div class="row">
         <div class="col">
-            <button type="button" class="btn btn-outline-dark float-left">Filter</button>
+            {{-- <h6>Periode: 2019-2020</h6>
+            <h6>Status: Belum diajukan</h6> --}}
         </div>
         <div class="col">
             <button type="button" class="btn btn-outline-dark float-right">Print</button>
-            {{-- <button type="button" class="btn btn-outline-dark float-right mr-2">Ajukan</button> --}}
+            <button type="button" class="btn btn-outline-dark float-right mr-2">Ajukan</button>
         </div>
     </div>
 
@@ -54,26 +55,50 @@
             <table class="table table-bordered">
                 <thead class="thead-dark">
                     <tr align="center">
-                        <th scope="col">Tanggal Pengajuan</th>
-                        <th scope="col"">Status</th>
-                        <th scope="col">Jumlah</th>
-                        <th scope="col">Aksi</th>
+                        <th scope="col" rowspan="2">Kebijakan / Kegiatan</th>
+                        <th scope="col" rowspan="2">Alokasi</th>
+                        <th scope="col" rowspan="2">IKU</th>
+                        <th scope="col" rowspan="2">Alokasi</th>
+                        <th scope="col" rowspan="2">Sumber Dana</th>
+                        <th scope="col" colspan="2">MAK</th>
+                        <th scope="col" rowspan="2">Cara Bayar</th>
+                        <th scope="col" rowspan="2">Usulan</th>
+                        <th scope="col" rowspan="2">Kelengkapan SPJ</th>
+                        <th scope="col" rowspan="2">Aksi</th>
+                    </tr>
+                    <tr align="center">
+                        <th scope="col">No.</th>
+                        <th scope="col">Uraian</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>xx-xx-xxxx</td>
-                        <td>Sudah dicairkan</td>
-                        <td>XXXXX</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
                         <td>
                             <a href="#" class="badge badge-success">Edit</a>
                             <a href="#" class="badge badge-danger">Hapus</a>
                         </td>
                     </tr>
                     <tr>
-                        <td>xx-xx-xxxx</td>
-                        <td>Belum diajukan</td>
-                        <td>XXXXX</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
                         <td>
                             <a href="#" class="badge badge-success">Edit</a>
                             <a href="#" class="badge badge-danger">Hapus</a>
@@ -88,10 +113,10 @@
 
     <div class="row">
         <div class="col">
-            {{-- <h6>Jumlah:</h6> --}}
+            <h6>Jumlah:</h6>
         </div>
         <div class="col">
-            <a href="{{url('/dp/pengajuan-dana/rincian-pengajuan-dana')}}" class="btn btn-outline-dark float-right" disabled>Tambah Usulan</a>
+            <a class="btn btn-outline-dark float-right" href="#">Tambah Rincian Usulan</a>
         </div>
     </div>
     <br>
@@ -100,7 +125,7 @@
 <br>
 
 <div class="container">
-    <a class="btn btn-light btn-lg btn-block shadow-sm" href="{{url('/dp')}}" role="button">Kembali ke Beranda</a>
+    <a class="btn btn-light btn-lg btn-block shadow-sm" href="{{url('/dp/pengajuan-dana')}}" role="button">Kembali ke Pengajuan Dana</a>
 </div>
 
 <style>
