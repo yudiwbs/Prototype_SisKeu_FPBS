@@ -22,7 +22,8 @@
     
 // Menghilangkan time limit standar PHP.
 set_time_limit(0);
-include public_path('scraper/simple_html_dom.php');
+// include public_path('scraper/simple_html_dom.php');
+include(app_path().'/Includes/simple_html_dom.php');
 
 // $page = $_GET['page'];
 // $dbpart = $_GET['part'];
