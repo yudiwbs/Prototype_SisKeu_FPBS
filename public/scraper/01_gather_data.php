@@ -80,7 +80,7 @@ $sql3 = 'CREATE TABLE IF NOT EXISTS scopus (
             details TEXT,
             citation INTEGER
         )';
-
+/* 
 $database = new SQLite3('scrape1.db');
 $database->exec($sql1);
 $database->exec($sql2);
@@ -95,7 +95,7 @@ $database = new SQLite3('scrape3.db');
 $database->exec($sql1);
 $database->exec($sql2);
 $database->exec($sql3);
-
+ */
 /* 
 echo '<script type="text/javascript" language="Javascript">'.
     'window.open("get_affiliation_page_data.php?page=1&part=1");'.
