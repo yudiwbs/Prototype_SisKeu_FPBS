@@ -383,7 +383,7 @@ if ($result) {
 
 if ($g_id <= $max_id) {
     echo '<script type="text/javascript" language="Javascript">'.
-        'window.open("get_author_page_data.php?part='.$g_part.'&id='.$g_id.'");'.
+        'window.open("http://128.199.205.18/scraper/get_author_page_data.php?part='.$g_part.'&id='.$g_id.'");'.
         '</script>'
     ;
     echo '<script type="text/javascript" language="Javascript">'.
@@ -392,7 +392,7 @@ if ($g_id <= $max_id) {
     ;
 } else {
     echo '<script type="text/javascript" language="Javascript">'.
-        'window.open("get_author_scopus_docs_data.php?part='.$g_part.'&id=1&page=1");'.
+        'window.open("http://128.199.205.18/scraper/get_author_scopus_docs_data.php?part='.$g_part.'&id=1&page=1");'.
         '</script>'
     ;
     echo '<script type="text/javascript" language="Javascript">'.

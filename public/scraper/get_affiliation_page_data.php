@@ -161,7 +161,7 @@ foreach ($html->find('caption') as $out) {
 
 if ($page == $max_page || $page == $dbpart * 50) {
     echo '<script type="text/javascript" language="Javascript">'.
-        'window.open("get_author_page_data.php?part='.$dbpart.'&id=1");'.
+        'window.open("http://128.199.205.18/scraper/get_author_page_data.php?part='.$dbpart.'&id=1");'.
         '</script>'
     ;
     echo '<script type="text/javascript" language="Javascript">'.
@@ -177,7 +177,7 @@ else {
         if ($row = $result->fetchArray()) {
             $next_pg = $row['max_curr_page'] + 1;
             echo '<script type="text/javascript" language="Javascript">'.
-                 'window.open("get_affiliation_page_data.php?page='.$next_pg.'&part='.$dbpart.'");'.
+                 'window.open("http://128.199.205.18/scraper/get_affiliation_page_data.php?page='.$next_pg.'&part='.$dbpart.'");'.
                  '</script>'
             ;
             // sleep(1);

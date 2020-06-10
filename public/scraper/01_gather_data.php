@@ -98,15 +98,15 @@ $database->exec($sql3);
 
 
 echo '<script type="text/javascript" language="Javascript">'.
-    'window.open("get_affiliation_page_data.php?page=1&part=1");'.
+    'window.open("http://128.199.205.18/scraper/get_affiliation_page_data.php?page=1&part=1");'.
     '</script>'
 ;
 echo '<script type="text/javascript" language="Javascript">'.
-    'window.open("get_affiliation_page_data.php?page=51&part=2");'.
+    'window.open("http://128.199.205.18/scraper/get_affiliation_page_data.php?page=51&part=2");'.
     '</script>'
 ;
 echo '<script type="text/javascript" language="Javascript">'.
-    'window.open("get_affiliation_page_data.php?page=101&part=3");'.
+    'window.open("http://128.199.205.18/scraper/get_affiliation_page_data.php?page=101&part=3");'.
     '</script>'
 ;
 
