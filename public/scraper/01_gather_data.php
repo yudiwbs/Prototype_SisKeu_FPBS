@@ -96,6 +96,7 @@ $database->exec($sql1);
 $database->exec($sql2);
 $database->exec($sql3);
 
+/* 
 echo '<script type="text/javascript" language="Javascript">'.
     'window.open("get_affiliation_page_data.php?page=1&part=1");'.
     '</script>'
@@ -113,4 +114,9 @@ echo '<script type="text/javascript" language="Javascript">'.
     'close();'.
     '</script>'
 ;
+ */
 
+ echo '<script type="text/javascript" language="Javascript">'.
+    'window.open("00_test.php");'.
+    '</script>'
+;
