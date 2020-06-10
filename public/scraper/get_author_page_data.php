@@ -54,7 +54,7 @@
  */
 
 set_time_limit(0);
-include "simple_html_dom.php";
+include public_path('scraper/simple_html_dom.php');
 
 $g_part = $_GET['part'];
 $g_id = $_GET['id'];
