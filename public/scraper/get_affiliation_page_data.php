@@ -164,6 +164,7 @@ foreach ($html->find('caption') as $out) {
     $max_page = $split[3];
 }
 
+echo "Hello, World!\n";
 var_dump($nama);
 
 // if ($page == $max_page || $page == $dbpart * 50) {
