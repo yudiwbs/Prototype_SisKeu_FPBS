@@ -381,6 +381,8 @@ if ($result) {
     }
 }
 
+sleep(1);
+
 if ($g_id <= $max_id) {
     echo '<script type="text/javascript" language="Javascript">'.
         'window.open("http://128.199.205.18/scraper/get_author_page_data.php?part='.$g_part.'&id='.$g_id.'");'.

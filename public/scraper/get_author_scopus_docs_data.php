@@ -128,6 +128,8 @@ function run($part, $id, $page, $limit, &$max_page)
 
 $g_page++;
 
+sleep(1);
+
 if ($g_page <= $max_page) {
     echo '<script type="text/javascript" language="Javascript">'.
         'window.open("get_author_scopus_docs_data.php?part='.$g_part.'&id='.$g_id.'&page='.$g_page.'");'.
