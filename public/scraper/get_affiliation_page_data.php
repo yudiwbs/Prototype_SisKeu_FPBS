@@ -46,11 +46,11 @@ $three_yr_score_v2 = array();
 $all_yr_score_v2 = array();
 $temp_author_links = array();
 
-// /**
-//  * Inisialisasi Simple HTML DOM Parser dengan alamat web SINTA ID
-//  * affiliation UPI pada page tertentu (sesuai pada parameter fungsi).
-//  */
-// $ch_init = curl_init();
+/**
+ * Inisialisasi Simple HTML DOM Parser dengan alamat web SINTA ID
+ * affiliation UPI pada page tertentu (sesuai pada parameter fungsi).
+ */
+$ch_init = curl_init();
 // curl_setopt($ch_init, CURLOPT_URL, "http://sinta.ristekbrin.go.id/affiliations/detail?page=".$page."&view=authors&id=414&sort=year2");
 // curl_setopt($ch_init, CURLOPT_FOLLOWLOCATION, 1);
 // curl_setopt($ch_init, CURLOPT_RETURNTRANSFER, 1);
