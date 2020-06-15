@@ -54,7 +54,7 @@
  */
 
 set_time_limit(0);
-include public_path('scraper/simple_html_dom.php');
+include_once("simple_html_dom.php");
 
 $g_part = $_GET['part'];
 $g_id = $_GET['id'];
@@ -381,7 +381,7 @@ if ($result) {
     }
 }
 
-// sleep(1);
+sleep(1);
 
 if ($g_id <= $max_id) {
     echo '<script type="text/javascript" language="Javascript">'.
