@@ -123,15 +123,6 @@ for ($i = 1; $i <= 3; $i++) {
     $result_auth = $database->query($sql_auth);
 
     while ($res_af = $result_affil->fetchArray()) {
-        /* array_push($dataGab, array(
-            "nama" => $res_af['nama'],
-            "nidn" => $res_af['nidn'],
-            "scopus_h_idx" => (int)$res_af['h_indeks'],
-            "google_h_idx" => (int)$res_af['google_h_indeks'],
-            "3_yr_score_v2" => (float)$res_af['three_yr_score_v2'],
-            "overall_score_v2" => (float)$res_af['all_yr_score_v2']
-        )); */
-
         array_push($nama, $res_af['nama']);
         array_push($nidn, $res_af['nidn']);
         array_push($scopus_h_idx, $res_af['h_indeks']);
@@ -305,11 +296,11 @@ for ($i = 0; $i < count($nama); $i++) {
     ));
 }
 
-// $file = fopen('result.json', 'w');
-// fwrite($file, json_encode($dataGab));
-// fclose($file);
+$file = fopen('result.json', 'w');
+fwrite($file, json_encode($dataGab));
+fclose($file);
 
-// echo '<script type="text/javascript" language="Javascript">'.
-//     'window.open("result.json", "_self");'.
-//     '</script>'
-// ;
+echo '<script type="text/javascript" language="Javascript">'.
+    'window.open("result.json", "_self");'.
+    '</script>'
+;
