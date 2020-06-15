@@ -57,8 +57,8 @@ curl_setopt($ch_init, CURLOPT_RETURNTRANSFER, 1);
 $response = curl_exec($ch_init);
 curl_close($ch_init);
 
-$html = new simple_html_dom();
-$html->load($response);
+// $html = new simple_html_dom();
+// $html->load($response);
 
 // // Ambil link page detail setiap author.
 // foreach ($html->find('a[href^=/authors/detail]') as $out) {
