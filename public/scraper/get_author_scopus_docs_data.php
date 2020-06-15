@@ -128,7 +128,7 @@ function run($part, $id, $page, $limit, &$max_page)
 
 $g_page++;
 
-// sleep(1);
+sleep(1);
 
 if ($g_page <= $max_page) {
     echo '<script type="text/javascript" language="Javascript">'.

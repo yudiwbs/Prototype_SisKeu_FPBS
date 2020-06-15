@@ -381,7 +381,7 @@ if ($result) {
     }
 }
 
-// sleep(1);
+sleep(1);
 
 if ($g_id <= $max_id) {
     echo '<script type="text/javascript" language="Javascript">'.
