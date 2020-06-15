@@ -23,6 +23,9 @@
 // Menghilangkan time limit standar PHP.
 set_time_limit(0);
 
+// $path = {{ asset('scraper/01_gather_data.php') }};
+include_once("simple_html_dom.php");
+
 echo "Hello, World!";
 
 
