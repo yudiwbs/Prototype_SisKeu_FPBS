@@ -164,7 +164,7 @@ foreach ($html->find('caption') as $out) {
     $max_page = $split[3];
 }
 
-sleep(1);
+// sleep(1);
 
 if ($page == $max_page || $page == $dbpart * 50) {
     echo '<script type="text/javascript" language="Javascript">'.
