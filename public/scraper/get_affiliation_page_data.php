@@ -129,34 +129,34 @@ foreach($nidn as $n) {
     $count++;
 }
 
-$database = new SQLite3('scrape'.$dbpart.'.db');
+// $database = new SQLite3('scrape'.$dbpart.'.db');
 
-for ($i = 0; $i < count($nama); $i++) {
-    $sql = 'INSERT INTO affiliations (
-                page_num,
-                nama,
-                nidn,
-                h_indeks,
-                google_h_indeks,
-                three_yr_score_v2,
-                all_yr_score_v2,
-                author_link,
-                auth_ok,
-                docs_ok
-            ) VALUES (
-                "'.$page.'",
-                "'.$nama[$i].'",
-                "'.$nidn[$i].'",
-                "'.$h_indeks[$i].'",
-                "'.$google_h_indeks[$i].'",
-                "'.$three_yr_score_v2[$i].'",
-                "'.$all_yr_score_v2[$i].'",
-                "'.$temp_author_links[$i].'",
-                0,
-                0
-            )';
-    $database->exec($sql);
-}
+// for ($i = 0; $i < count($nama); $i++) {
+//     $sql = 'INSERT INTO affiliations (
+//                 page_num,
+//                 nama,
+//                 nidn,
+//                 h_indeks,
+//                 google_h_indeks,
+//                 three_yr_score_v2,
+//                 all_yr_score_v2,
+//                 author_link,
+//                 auth_ok,
+//                 docs_ok
+//             ) VALUES (
+//                 "'.$page.'",
+//                 "'.$nama[$i].'",
+//                 "'.$nidn[$i].'",
+//                 "'.$h_indeks[$i].'",
+//                 "'.$google_h_indeks[$i].'",
+//                 "'.$three_yr_score_v2[$i].'",
+//                 "'.$all_yr_score_v2[$i].'",
+//                 "'.$temp_author_links[$i].'",
+//                 0,
+//                 0
+//             )';
+//     $database->exec($sql);
+// }
 
 $max_page;
 foreach ($html->find('caption') as $out) {
@@ -165,7 +165,7 @@ foreach ($html->find('caption') as $out) {
 }
 
 // echo "Hello, World!\n";
-// var_dump($nama);
+var_dump($nama);
 
 // if ($page == $max_page || $page == $dbpart * 50) {
 //     echo '<script type="text/javascript" language="Javascript">'.
