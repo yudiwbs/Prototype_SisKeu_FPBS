@@ -129,34 +129,34 @@ foreach($nidn as $n) {
     $count++;
 }
 
-// $database = new SQLite3('scrape'.$dbpart.'.db');
+$database = new SQLite3('scrape'.$dbpart.'.db');
 
-// for ($i = 0; $i < count($nama); $i++) {
-//     $sql = 'INSERT INTO affiliations (
-//                 page_num,
-//                 nama,
-//                 nidn,
-//                 h_indeks,
-//                 google_h_indeks,
-//                 three_yr_score_v2,
-//                 all_yr_score_v2,
-//                 author_link,
-//                 auth_ok,
-//                 docs_ok
-//             ) VALUES (
-//                 "'.$page.'",
-//                 "'.$nama[$i].'",
-//                 "'.$nidn[$i].'",
-//                 "'.$h_indeks[$i].'",
-//                 "'.$google_h_indeks[$i].'",
-//                 "'.$three_yr_score_v2[$i].'",
-//                 "'.$all_yr_score_v2[$i].'",
-//                 "'.$temp_author_links[$i].'",
-//                 0,
-//                 0
-//             )';
-//     $database->exec($sql);
-// }
+for ($i = 0; $i < count($nama); $i++) {
+    $sql = 'INSERT INTO affiliations (
+                page_num,
+                nama,
+                nidn,
+                h_indeks,
+                google_h_indeks,
+                three_yr_score_v2,
+                all_yr_score_v2,
+                author_link,
+                auth_ok,
+                docs_ok
+            ) VALUES (
+                "'.$page.'",
+                "'.$nama[$i].'",
+                "'.$nidn[$i].'",
+                "'.$h_indeks[$i].'",
+                "'.$google_h_indeks[$i].'",
+                "'.$three_yr_score_v2[$i].'",
+                "'.$all_yr_score_v2[$i].'",
+                "'.$temp_author_links[$i].'",
+                0,
+                0
+            )';
+    $database->exec($sql);
+}
 
 $max_page;
 foreach ($html->find('caption') as $out) {
@@ -164,35 +164,34 @@ foreach ($html->find('caption') as $out) {
     $max_page = $split[3];
 }
 
-// echo "Hello, World!\n";
-var_dump($nama);
+sleep(1);
 
-// if ($page == $max_page || $page == $dbpart * 50) {
-//     echo '<script type="text/javascript" language="Javascript">'.
-//         'window.open("http://128.199.205.18/scraper/get_author_page_data.php?part='.$dbpart.'&id=1");'.
-//         '</script>'
-//     ;
-//     echo '<script type="text/javascript" language="Javascript">'.
-//          'close();'.
-//          '</script>'
-//     ;
-// }
-// else {
-//     $sql = 'SELECT MAX(page_num) AS max_curr_page FROM affiliations
-//             ORDER BY page_num DESC LIMIT 1';
-//     $result = $database->query($sql);
-//     if ($result) {
-//         if ($row = $result->fetchArray()) {
-//             $next_pg = $row['max_curr_page'] + 1;
-//             echo '<script type="text/javascript" language="Javascript">'.
-//                  'window.open("http://128.199.205.18/scraper/get_affiliation_page_data.php?page='.$next_pg.'&part='.$dbpart.'");'.
-//                  '</script>'
-//             ;
-//             // sleep(1);
-//             echo '<script type="text/javascript" language="Javascript">'.
-//                  'close();'.
-//                  '</script>'
-//             ;
-//         }
-//     }
-// }
+if ($page == $max_page || $page == $dbpart * 50) {
+    echo '<script type="text/javascript" language="Javascript">'.
+        'window.open("http://128.199.205.18/scraper/get_author_page_data.php?part='.$dbpart.'&id=1");'.
+        '</script>'
+    ;
+    echo '<script type="text/javascript" language="Javascript">'.
+         'close();'.
+         '</script>'
+    ;
+}
+else {
+    $sql = 'SELECT MAX(page_num) AS max_curr_page FROM affiliations
+            ORDER BY page_num DESC LIMIT 1';
+    $result = $database->query($sql);
+    if ($result) {
+        if ($row = $result->fetchArray()) {
+            $next_pg = $row['max_curr_page'] + 1;
+            echo '<script type="text/javascript" language="Javascript">'.
+                 'window.open("http://128.199.205.18/scraper/get_affiliation_page_data.php?page='.$next_pg.'&part='.$dbpart.'");'.
+                 '</script>'
+            ;
+            // sleep(1);
+            echo '<script type="text/javascript" language="Javascript">'.
+                 'close();'.
+                 '</script>'
+            ;
+        }
+    }
+}
