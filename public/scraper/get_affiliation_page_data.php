@@ -26,7 +26,7 @@ set_time_limit(0);
 // $path = {{ asset('scraper/01_gather_data.php') }};
 include_once("simple_html_dom.php");
 
-echo "Hello, World!";
+// echo "Hello, World!";
 
 
 $page = $_GET['page'];
@@ -163,6 +163,8 @@ foreach ($html->find('caption') as $out) {
     $split = explode(' ', $out);
     $max_page = $split[3];
 }
+
+var_dump($nama);
 
 // if ($page == $max_page || $page == $dbpart * 50) {
 //     echo '<script type="text/javascript" language="Javascript">'.
