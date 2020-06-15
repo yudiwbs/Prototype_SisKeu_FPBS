@@ -47,7 +47,7 @@
                                     $cls2 = 'btn btn-outline-dark mr-1 disabled';
                                 }
                             ?>
-                            <a href="{{ asset('scraper/01_gather_data.php') }}" ?> target="_blank" class="<?= $cls1?>">(1) Scraper</a>
+                            <a href="{{ asset('scraper/01_gather_data.php') }}" target="_blank" class="<?= $cls1?>">(1) Scraper</a>
                             <a href="{{ asset('scraper/02_generate_json.php') }}" target="_blank" class="<?= $cls2?>">(2) JSON</a>
                             <a href="{{ asset('scraper/reset.php') }}" {{-- target="_blank"  --}}class="btn btn-outline-dark mr-1">Reset Scraper</a>
                         </div>
