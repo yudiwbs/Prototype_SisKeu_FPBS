@@ -305,11 +305,11 @@ for ($i = 0; $i < count($nama); $i++) {
     ));
 }
 
-$file = fopen('result.json', 'w');
-fwrite($file, json_encode($dataGab));
-fclose($file);
+// $file = fopen('result.json', 'w');
+// fwrite($file, json_encode($dataGab));
+// fclose($file);
 
-echo '<script type="text/javascript" language="Javascript">'.
-    'window.open("result.json", "_self");'.
-    '</script>'
-;
+// echo '<script type="text/javascript" language="Javascript">'.
+//     'window.open("result.json", "_self");'.
+//     '</script>'
+// ;
